@@ -6,6 +6,15 @@
 
   <br/>
 
+  <div style="position:relative; left: -250px;" >
+    <!--https://github.com/mathewbyrne/angular-progress-arc-->
+    <progress-arc  size="{{ size }}"
+                   stroke="{{ stroke }}"
+                   stroke-width="{{ strokeWidth }}"
+                   complete="listOfWorkersInBorderfree.length/15"
+                   counter-clockwise="{{ counterClockwise }}">
+    </progress-arc>
+  </div>
 
   <b>workers:</b>
   <div ng-repeat="worker in listOfWorkersInBorderfree">
@@ -15,6 +24,8 @@
 
   <br>
 
+
+
   <label>
     New worker: (first, last)
     <input ng-model="newWorker">
@@ -22,13 +33,7 @@
 
   <button ng-click="addWorker()">add worker</button>
 
-  <!--https://github.com/mathewbyrne/angular-progress-arc-->
-  <progress-arc  size="{{ size }}"
-                 stroke="{{ stroke }}"
-                 stroke-width="{{ strokeWidth }}"
-                 complete="listOfWorkersInBorderfree.length/15"
-                 counter-clockwise="{{ counterClockwise }}">
-  </progress-arc>
+
 
 
 
