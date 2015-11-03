@@ -6,23 +6,21 @@
 
   <br/>
 
-  <!--{{listOfWorkersInBorderfree}}-->
 
-<!--
-  <div>
-    <ul ng-repeat="worker in listOfWorkersInBorderfree">
-      <li>{{worker.first}}</li>
-    </ul>
-  </div>
--->
-
-
-<!--
+  <b>workers:</b>
   <div ng-repeat="worker in listOfWorkersInBorderfree">
-    <input ng-model="worker.last"/>
+    &nbsp;&nbsp;
+    <span>{{worker.first}}, {{worker.last}}</span>
   </div>
--->
 
+  <br>
+
+  <label>
+    New worker: (first, last)
+    <input ng-model="newWorker">
+  </label>
+
+  <button ng-click="addWorker()">add worker</button>
 
 </div>
 
