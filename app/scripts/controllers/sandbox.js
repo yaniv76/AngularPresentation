@@ -29,6 +29,16 @@ angularPresentationApp.controller('SandboxCtrl', function ($scope) {
     var worker = $scope.newWorker.split(',');
     $scope.listOfWorkersInBorderfree.push({first:worker[0], last:worker[1]});
     $scope.newWorker = "";
-  }
+    $scope.progress = $scope.listOfWorkersInBorderfree.length / 15;
+
+  };
+
+  $scope.size = 200;
+  $scope.progress = $scope.listOfWorkersInBorderfree.length / 15;
+  $scope.strokeWidth = 10;
+  $scope.stroke = 'red';
+  $scope.counterClockwise = '';
+
+
 
 });

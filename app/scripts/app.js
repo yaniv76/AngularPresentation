@@ -15,7 +15,8 @@ var angularPresentationApp = angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angular-progress-arc'
   ])
   .config(function ($routeProvider) {
     $routeProvider
