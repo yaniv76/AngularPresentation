@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var angularPresentationApp = angular
   .module('angularPresentationApp', [
     'ngAnimate',
     'ngCookies',
@@ -26,6 +26,10 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/sandbox', {
+        templateUrl: 'views/sandbox.html',
+        controller: 'SandboxCtrl'
       })
       .otherwise({
         redirectTo: '/'

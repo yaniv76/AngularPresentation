@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the angularPresentationApp
  */
-var app = angular.module('angularPresentationApp')
+angular.module('angularPresentationApp')
   .controller('MainCtrl', function ($scope) {
 
     window.scope = $scope;

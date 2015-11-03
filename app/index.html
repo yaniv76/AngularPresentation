@@ -24,14 +24,14 @@
         <ul class="nav navbar-nav">
           <li ng-class="{active:activeTab==1}" ng-click="activeTab = 1"><a href="#/">Home</a></li>
           <li ng-class="{active:activeTab==2}" ng-click="activeTab = 2"><a ng-href="#/about">About</a></li>
-          <li ng-class="{active:activeTab==3}" ng-click="activeTab = 3"><a ng-href="#/">Contact</a></li>
+          <li ng-class="{active:activeTab==3}" ng-click="activeTab = 3"><a ng-href="#/sandbox">Sandbox</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="container" style="min-height: 850px">
   <div ng-view=""></div>
 </div>
 
@@ -55,6 +55,7 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/sandbox.js"></script>
 
 </body>
 </html>
