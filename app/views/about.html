@@ -1,1 +1,11 @@
 <p>This is the about view.</p>
+
+
+
+<div class="left">
+  <b>workers:</b>
+
+  <div ng-repeat="worker in workersService.getWorkers()">
+    <span>{{worker.first}}, {{worker.last}}</span>
+  </div>
+</div>

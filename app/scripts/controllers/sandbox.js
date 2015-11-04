@@ -7,35 +7,22 @@
  * # AboutCtrl
  * Controller of the angularPresentationApp
  */
-angularPresentationApp.controller('SandboxCtrl', function ($scope) {
+angularPresentationApp.controller('SandboxCtrl', function ($scope, workersService) {
 
   window.scope = $scope;
 
-  $scope.listOfWorkersInBorderfree = [
-    {first: 'Anatoly', last: 'Libman'},
-    {first: 'Avi', last: 'TooMany'},
-    {first: 'Avishay', last: 'Oshri'},
-    {first: 'Dekel', last: 'Moyal'},
-    {first: 'Denis', last: 'Denis'},
-    {first: 'Dmitry', last: 'Kar'},
-    {first: 'Eyal', last: 'AlsoTooMany'},
-    {first: 'Haim', last: 'Sulam'},
-    {first: 'Genady', last: 'Kof'}
-  ];
-
   $scope.newWorker = "";
 
-  $scope.addWorker = function () {
-    var worker = $scope.newWorker.split(',');
-    $scope.listOfWorkersInBorderfree.push({first:worker[0], last:worker[1]});
-    $scope.newWorker = "";
-
-  };
+  $scope.workersService = workersService;
 
   $scope.size = 200;
   $scope.strokeWidth = 10;
   $scope.stroke = 'red';
   $scope.counterClockwise = '';
+
+  $scope.clearNewWorker = function() {
+    $scope.newWorker = "";
+  }
 
 
 

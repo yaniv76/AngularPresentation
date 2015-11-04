@@ -8,6 +8,8 @@
  * Controller of the angularPresentationApp
  */
 angular.module('angularPresentationApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('AboutCtrl', function ($scope, workersService) {
+
+    $scope.workersService = workersService;
 
   });

@@ -80,4 +80,14 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+  .left {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+  }
+
+  .right {
+    overflow: hidden;
+  }
 }
