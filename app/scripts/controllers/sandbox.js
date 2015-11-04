@@ -25,8 +25,8 @@ angularPresentationApp.controller('SandboxCtrl', function ($scope) {
 
   $scope.newWorker = "";
 
-  $scope.addWorker = function () {
-    var worker = $scope.newWorker.split(',');
+  $scope.addWorker = function (newWorker) {
+    var worker = newWorker.split(',');
     $scope.listOfWorkersInBorderfree.push({first:worker[0], last:worker[1]});
     $scope.newWorker = "";
 
