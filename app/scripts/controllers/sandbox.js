@@ -13,12 +13,12 @@ angularPresentationApp.controller('SandboxCtrl', function ($scope) {
 
   $scope.listOfWorkersInBorderfree = [
     {first: 'Anatoly', last: 'Libman'},
-    {first: 'Avi', last: 'TooMany'},
+    {first: 'Avi', last: 'Many'},
     {first: 'Avishay', last: 'Oshri'},
     {first: 'Dekel', last: 'Moyal'},
     {first: 'Denis', last: 'Denis'},
     {first: 'Dmitry', last: 'Kar'},
-    {first: 'Eyal', last: 'AlsoTooMany'},
+    {first: 'Eyal', last: 'AlsoMany'},
     {first: 'Haim', last: 'Sulam'},
     {first: 'Genady', last: 'Kof'}
   ];
